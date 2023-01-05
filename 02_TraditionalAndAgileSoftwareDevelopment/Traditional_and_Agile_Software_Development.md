@@ -39,3 +39,9 @@
 * Good choice for projects with uncertain factors that expect change
 * Agile is not a methodology. It's a way of thinking. 
   * Scrum and Kanban are methodologies that implement the Agile approach.
+
+## Waterfall or Agile
+
+* Both have their place
+* If level of uncertainty is high, choose Agile
+* Otherwise, choose waterfall
