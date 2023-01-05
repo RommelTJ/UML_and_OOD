@@ -23,3 +23,19 @@
 * Candidates for waterfall are Life-control systems, Medical systems, and Military systems.
 * Good choice is requirements don't change over time.
 * Not good if requirements change frequently.
+
+## The Agile Approach
+
+* Began with Agile Manifesto (2001)
+* Defines 4 values
+  * Individuals and interactions over processes and tools
+  * Working software over comprehensive documentation
+  * Customer collaboration over contract negotiation
+  * Responding to change over following a plan
+* Main idea: provide functional software iteratively
+* Work is broken up into sprints: 2-4 weeks long
+* Customers can provide early feedback
+* Business users are involved in development
+* Good choice for projects with uncertain factors that expect change
+* Agile is not a methodology. It's a way of thinking. 
+  * Scrum and Kanban are methodologies that implement the Agile approach.
