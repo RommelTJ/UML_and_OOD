@@ -16,3 +16,10 @@
 ## Objects
 
 * Objects have properties, identity (state), and behaviors.
+
+## The Class
+
+* We need a class to create objects. 
+* The blueprint of an object.
+* Classes have properties and actions (methods).
+* Classes can be packaged into libraries and reused elsewhere.
