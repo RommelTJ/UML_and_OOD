@@ -12,3 +12,7 @@
 * Then came Object-Oriented Programming (1980s)
   * Split apart program into self-contained objects.
   * An objects functions as a separate program and operates on its own data.
+
+## Objects
+
+* Objects have properties, identity (state), and behaviors.
