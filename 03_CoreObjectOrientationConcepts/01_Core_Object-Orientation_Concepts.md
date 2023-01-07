@@ -40,3 +40,10 @@
 * When designing your classes, expose only as much detail as needed.
 * A tightly-coupled system, with most of the objects depending on each other is a sign of bad design.
   * Updating or maintaining such a system is a pain.
+
+## Inheritance
+
+* Inheritance means code reuse
+* Object-orientation is about granularity and separation of concerns.
+* Each class should focus on a set of specific functionalities and do that well.
+* Through inheritance, a class can inherit from a class. Subclasses can implement specialized behavior.
