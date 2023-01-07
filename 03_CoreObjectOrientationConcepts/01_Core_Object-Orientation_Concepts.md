@@ -23,3 +23,8 @@
 * The blueprint of an object.
 * Classes have properties and actions (methods).
 * Classes can be packaged into libraries and reused elsewhere.
+
+## Abstraction
+
+* A way of describing complex problems in simple terms by ignoring some details.
+* We are naturally good at generalizing things.
