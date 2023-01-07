@@ -28,3 +28,15 @@
 
 * A way of describing complex problems in simple terms by ignoring some details.
 * We are naturally good at generalizing things.
+
+## Encapsulation and Data Hiding
+
+* Encapsulation
+  * A method to pack together properties and methods in a class.
+  * Hiding the gears and the levers.
+  * Data Hiding
+    * Avoid exposing inner workings of our objects to avoid external interference.
+* Useful because we prevent unintended changes to our objects.
+* When designing your classes, expose only as much detail as needed.
+* A tightly-coupled system, with most of the objects depending on each other is a sign of bad design.
+  * Updating or maintaining such a system is a pain.
