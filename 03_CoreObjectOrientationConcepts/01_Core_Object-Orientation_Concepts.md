@@ -47,3 +47,10 @@
 * Object-orientation is about granularity and separation of concerns.
 * Each class should focus on a set of specific functionalities and do that well.
 * Through inheritance, a class can inherit from a class. Subclasses can implement specialized behavior.
+
+## Polymorphism
+
+* Polymorphism is the condition of occurring in many forms.
+* Method overriding
+  * Subclasses can provide a specialized implementation of a method defined in a superclass.
+* Polymorphism is about working freely with instances of many classes that share a common superclass.
