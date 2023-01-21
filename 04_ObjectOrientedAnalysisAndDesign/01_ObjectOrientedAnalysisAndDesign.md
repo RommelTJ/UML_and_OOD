@@ -42,3 +42,9 @@
   * 1-2 sentences long
   * Format: As a <type of user>, I want <some goal> so that <some reason>
   * Use them to ignite discussions instead of describing details
+
+## Why do we need a common descriptive language?
+
+* The lack of a commonly accepted design language led to the proliferation of different non-standard approaches
+* UML is a proposed standard to solve this problem
+* UML can both describe structure and behavior of a system
