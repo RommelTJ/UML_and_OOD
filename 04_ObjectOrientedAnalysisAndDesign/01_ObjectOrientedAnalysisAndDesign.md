@@ -29,3 +29,16 @@
   * You can also use formal steps or systems
 * Define what the system needs to do
 * Identify constraints and boundaries
+
+## Mapping Requirements to Technical Descriptions
+
+* Describe the system from the user's point of view
+* How to describe the use case
+  * Title: Short and descriptive
+  * Actor: User
+  * Scenario: Explain how the software works in this scenario
+* Descriptions and formats should be clear to non-technical users
+* You can also use User Stories
+  * 1-2 sentences long
+  * Format: As a <type of user>, I want <some goal> so that <some reason>
+  * Use them to ignite discussions instead of describing details
