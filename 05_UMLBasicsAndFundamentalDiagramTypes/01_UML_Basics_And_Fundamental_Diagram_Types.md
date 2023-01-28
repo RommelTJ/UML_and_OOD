@@ -84,6 +84,50 @@ Elevator Challenge:
 - Elevators are on duty 24/7
 - Maintenance and repair is required
 
+User role:  
+```mermaid
+flowchart LR
+  TRIGGER([The user enters the elevator])-->S1
+  TRIGGER([The user enters the elevator])-->S2
+  TRIGGER([The user enters the elevator])-->S3
+  TRIGGER([The user enters the elevator])-->S4
+  TRIGGER([The user enters the elevator])-->S5
+  
+  %% Main success scenario %%
+  subgraph Elevator
+    S1[Call Elevator]
+    S2[Select Floor]
+    S3[Ride Elevator]
+    S4[Operate Doors]
+    S5[Trigger Emergency]
+  end
+```
+
+Technician Role:  
+```mermaid
+flowchart LR
+  TRIGGER([The technician enters the elevator])-->S1
+  TRIGGER([The technician enters the elevator])-->S2
+  TRIGGER([The technician enters the elevator])-->S3
+  TRIGGER([The technician enters the elevator])-->S4
+  TRIGGER([The technician enters the elevator])-->S5
+  TRIGGER([The technician enters the elevator])-->S6
+  TRIGGER([The technician enters the elevator])-->S7
+  TRIGGER([The technician enters the elevator])-->S8
+  
+  %% Main success scenario %%
+  subgraph Elevator
+    S1[Call Elevator]
+    S2[Select Floor]
+    S3[Ride Elevator]
+    S4[Operate Doors]
+    S5[Trigger Emergency]
+    S6[Inspect Elevator]
+    S7[Service Elevator]
+    S8[Repair Elevator]
+  end
+```
+
 ## Class Diagrams
 
 ## Visibility: Public, Private, Protected, Package
