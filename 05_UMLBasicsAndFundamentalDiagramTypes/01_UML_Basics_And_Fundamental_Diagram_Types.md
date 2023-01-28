@@ -31,7 +31,7 @@
     * These include more information so that important details are not missed.
 
 ```mermaid
-flowchart TD;
+flowchart TD
    %% Trigger event
    TRIGGER([The user asks the system to log them in])-->S1;
  
