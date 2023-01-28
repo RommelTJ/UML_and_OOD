@@ -130,6 +130,20 @@ flowchart LR
 
 ## Class Diagrams
 
+* The most frequently used UML diagram type.
+* First, identify all the entities that represent the system.
+* A class is represented as a rectangle with 3 compartments.
+  * Class Name
+    * Standard: Name should be in upper camel-case.
+  * Attributes
+    * Should be concise
+    * Should be in lower camel-case.
+    * Should include the data type.
+  * Operations
+    * Should be verbs in lower camer-case.
+    * Can specify method arguments.
+    * Can specify a return type.
+
 ## Visibility: Public, Private, Protected, Package
 
 ## Associations
