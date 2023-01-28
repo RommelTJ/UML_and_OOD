@@ -78,6 +78,12 @@ flowchart TD;
    style FAILURE fill:#fcc
 ```
 
+Elevator Challenge:  
+- What actors interact with the elevator?
+- What are its main functions?
+- Elevators are on duty 24/7
+- Maintenance and repair is required
+
 ## Class Diagrams
 
 ## Visibility: Public, Private, Protected, Package
