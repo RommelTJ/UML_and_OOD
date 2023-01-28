@@ -142,7 +142,13 @@ flowchart LR
   * Operations
     * Should be verbs in lower camer-case.
     * Can specify method arguments.
-    * Can specify a return type.
+    * Can specify a return type.  
+
+Class Diagram Challenge:  
+* Create a class diagram of an elevator maintenance robot.
+  * Robot must have an unique identifier
+  * Robot can diagnose, service, and repair the elevator
+  * Keep it simple
 
 ## Visibility: Public, Private, Protected, Package
 
