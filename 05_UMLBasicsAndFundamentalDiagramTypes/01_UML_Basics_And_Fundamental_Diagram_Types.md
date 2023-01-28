@@ -150,6 +150,19 @@ Class Diagram Challenge:
   * Robot can diagnose, service, and repair the elevator
   * Keep it simple
 
+```mermaid
+---
+title: ElevatorRobot example
+---
+classDiagram
+  class ElevatorRobot {
+    +String id
+    +diagnose(): Future[String]
+    +service(): Future[Int]
+    +repair(): Future[Int]
+  }
+```
+
 ## Visibility: Public, Private, Protected, Package
 
 ## Associations
