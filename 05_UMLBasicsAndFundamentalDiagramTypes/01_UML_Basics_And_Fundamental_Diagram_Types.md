@@ -178,6 +178,16 @@ classDiagram
 
 ## Associations
 
+* UML expresses relationships with solid lines
+* An open arrow head represents only one of the classes relates to the other one.
+  * The arrow points to the class that is referred to by the other class.
+  * Ex: Trip -> Expense
+* We can represent multiplicity as follows: 
+  * '1': exactly 1. (default, so often omitted)
+  * '*': 0 or more.
+  * '0..1': Optional.
+* You may optionally also display the name of the class property for the given association.
+
 ## Generalization
 
 ## Dependency, Aggregation, Composition and Realization
