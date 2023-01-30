@@ -165,6 +165,17 @@ classDiagram
 
 ## Visibility: Public, Private, Protected, Package
 
+* UML defines visibility levels as such:  
+  * '+': Public
+    * Can also be used by code outside the object
+  * '-': Private
+    * Can only be accessed within the defining class
+  * '#': Protected
+    * Accessible from defining and child classes
+  * '~': Package 
+    * Available within its enclosing package
+* Expose only as much as needed
+
 ## Associations
 
 ## Generalization
