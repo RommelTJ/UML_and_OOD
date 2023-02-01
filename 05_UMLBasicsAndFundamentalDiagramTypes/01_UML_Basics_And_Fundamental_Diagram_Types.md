@@ -190,6 +190,14 @@ classDiagram
 
 ## Generalization
 
+* Used to express that one model element is based on another model element.
+* Represented via a hollow arrowhead that points to the parent.
+  * Ex: Parent <|-- Child
+  * Ex: Trip <|-- BusinessTrip
+* One parent may have multiple children
+* One child may have multiple parents (multiple inheritance)
+* UML is not restricted to classes. It may be used in use case or component diagrams.
+
 ## Dependency, Aggregation, Composition and Realization
 
 ## Sequence Diagrams
