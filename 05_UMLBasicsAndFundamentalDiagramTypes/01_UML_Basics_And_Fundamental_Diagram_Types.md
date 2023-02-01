@@ -200,6 +200,30 @@ classDiagram
 
 ## Dependency, Aggregation, Composition and Realization
 
+* Dependencies are represented as a dashed line that ends with an open arrowhead.
+  * The arrow points to the dependency.
+* Association vs Dependency
+  * Association indicates that a class has attributes of the other class' type.
+  * Dependency indicates a class gets a reference to the other class.
+* Aggregation and Composition
+  * Aggregation is a part-whole relationship.
+    * It's drawn via a solid line with a hollow diamond at the owner's end.
+    * Is redundant because it's the same thing as the association.
+  * Composition is a stronger form of association.
+    * It implies ownership. Parts are destroyed when the owner is destroyed.
+    * It's drawn via a solid line with a filled diamond at the owner's end.
+* Realization
+  * Indicates that a class implements the behavior specified by another model element.
+  * It's drawn via a dashed line with a hollow triangle at the interface's end.
+    * Ex: AbstractTrip <>--- Trip
+* Summary
+  * Generalization: "is-a" relationship
+  * Association: "has-a" relationship
+  * Aggregation: "has-a" relationship
+  * Composition: "part-of" relationship
+  * Dependency: "references" relationship
+  * Realization: "implements behavior" relationship
+
 ## Sequence Diagrams
 
 ## Activity Diagrams
