@@ -226,6 +226,20 @@ classDiagram
 
 ## Sequence Diagrams
 
+* Used to display dynamic data.
+* Box at the top of the page. Each box is an object.
+  * You can optionally set a type.
+* You can specify messages sent from one object to another.
+* You don't need to represent all the methods in sequence diagrams.
+  * Focus on the important interactions between objects.
+
+```mermaid
+sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+    Alice-)John: See you later!
+```
+
 ## Activity Diagrams
 
 ## Statechart Diagrams
