@@ -242,5 +242,27 @@ sequenceDiagram
 
 ## Activity Diagrams
 
+* Behavioral diagram used to describe workflows or business processes.
+* Ex. Steps to take a customer's order.
+* Drawn with Nodes with flows (edges).
+* A diamond represents a decision node or a merge activity.
+* You can diagram parallel processes with solid lines for "forks" or "joins"
+* A workflow end is represented by a filled-in circle with an outer circle
+* In mermaid, the closest diagram is probably the State Diagram.
+
+```mermaid
+   stateDiagram-v2
+    state fork_state <<fork>>
+      [*] --> fork_state
+      fork_state --> State2
+      fork_state --> State3
+
+      state join_state <<join>>
+      State2 --> join_state
+      State3 --> join_state
+      join_state --> State4
+      State4 --> [*]
+```
+
 ## Statechart Diagrams
 
