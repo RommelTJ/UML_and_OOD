@@ -266,3 +266,14 @@ sequenceDiagram
 
 ## Statechart Diagrams
 
+* Describes the state changes of an object
+* Consists of state, transition, and events.
+  * State: Represents the current condition of an object
+  * Transition: Shows that an object switches state
+  * Events: Triggers a transition
+
+```mermaid
+stateDiagram-v2
+    [*] --> s1
+    s1 --> [*]: Transition to end state
+```
