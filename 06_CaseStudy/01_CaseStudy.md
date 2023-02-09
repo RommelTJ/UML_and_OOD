@@ -53,6 +53,56 @@ Thus, we create 3 epics:
 
 ## Diagramming the main use cases
 
+Note Creation and Editing Use Case Diagram
+```mermaid
+flowchart LR
+  TRIGGER([User])-->S1
+  TRIGGER([User])-->S2
+  
+  %% Main success scenario %%
+  subgraph Note App
+    S1[Create Note]-->S3
+    S1[Create Note]-->S4
+    S2[Edit Note]-->S3
+    S2[Edit Note]-->S4
+    
+    S3[Attach Photo]
+    S4[Add Handwritten Sketch]
+  end
+```
+
+Privacy Use Case Diagram
+```mermaid
+flowchart LR
+  TRIGGER([User])-->S1
+  
+  %% Main success scenario %%
+  subgraph Note App
+    S1[Create Note]-->S2
+    S2[Create Private Note]-->S3
+    S3[Protect with Password]
+  end
+```
+
+Syncing to Cloud Servers Use Case Diagram
+```mermaid
+flowchart LR
+  TRIGGER([User])-->S1
+  TRIGGER([User])-->S2
+  S1-- upload -->S3
+  S2-- upload -->S3
+  
+  %% Main success scenario %%
+  subgraph Note App
+    S1[Create Note]
+    S2[Edit Note]
+  end
+  
+  subgraph Cloud Server
+    S3[Dropbox]
+  end
+```
+
 ## Modelling the classes and relationships
 
 ## Describing the flow of note creation using sequence diagrams
