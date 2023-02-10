@@ -103,7 +103,61 @@ flowchart LR
   end
 ```
 
-## Modelling the classes and relationships
+## Modeling the classes and relationships
+
+```mermaid
+classDiagram
+  class Note {
+    -note: String
+    -photos: List[Image]
+    -sketches: List[Sketch]
+    +setText(text: String)
+    +getText(): String
+    +addImage(image: Image)
+    +getImages(): List[Image]
+    +addSketch(sketch: Sketch)
+    +retrieveAllSketches(): List[Sketch]
+  }
+  
+  class Image
+  
+  class Sketch
+  
+  class SecureNote {
+   -passwordHash: String
+  }
+  
+  class Crypto {
+   + hash(input: String): String
+  }
+  
+  class LocalPersistence {
+    <<interface>>
+    + getNotes(): List[Note]
+    + save(note: Note)
+    + update(note: Note)
+    + delete(note: Note)
+  }
+  
+  class FileManager
+  
+  class NetworkController {
+    + create(note: Note)
+    + getNotes(): List[Note]
+    + delete(note: Note)
+    + update(note: Note)
+  }
+  
+  Note *--> Image
+  Note *--> Sketch
+  Note <|-- SecureNote
+  Note <.. LocalPersistence
+  Note <.. NetworkController
+  
+  SecureNote ..> Crypto
+  
+  FileManager ..|> LocalPersistence
+```
 
 ## Describing the flow of note creation using sequence diagrams
 
