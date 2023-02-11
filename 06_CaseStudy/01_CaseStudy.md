@@ -161,4 +161,19 @@ classDiagram
 
 ## Describing the flow of note creation using sequence diagrams
 
+* Adding a note flow
+```mermaid
+sequenceDiagram
+    aView->>aController: onCreateNote
+    aController-->>aNote: <<create>> new Note
+    aView->>aController: onSaveNote
+    par aController to aFileManager
+      aController-->>aFileManager: <<async>> save(note: Note)
+      aFileManager-->>aController: success
+    and aController to anOnlineManager
+      aController-->>anOnlineManager: <<async>> upload(note: Note)
+      anOnlineManager-->>aController: success
+    end
+```
+
 ## Modeling the states of a note object
