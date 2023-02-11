@@ -1,6 +1,6 @@
 # Unified Modeling Language (UML) and Object-Oriented Design 
 
-Version: 0.5.0 - 04 Feb 2023
+Version: 0.6.0 - 11 Feb 2023
 
 ## Description
 
