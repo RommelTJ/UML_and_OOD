@@ -151,9 +151,6 @@ Class Diagram Challenge:
   * Keep it simple
 
 ```mermaid
----
-title: ElevatorRobot example
----
 classDiagram
   class ElevatorRobot {
     +String id
