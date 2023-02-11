@@ -177,3 +177,24 @@ sequenceDiagram
 ```
 
 ## Modeling the states of a note object
+
+```mermaid
+stateDiagram-v2
+  [*] --> New: Note Created
+  New --> Unsaved: Details Added
+  Unsaved --> [*]: Cancel
+  
+  Unsaved --> Archived: app terminated
+  Archived --> Unsaved: app started
+    
+  Unsaved --> Saved: Saved and Pending Upload
+  Saved --> Unsaved: Save or Upload Failed
+  Saved --> PersistedAndUploaded: Save and Upload Successful
+  Saved --> Persisted: Save Ok, Upload Failed
+  
+  Persisted --> PendingUpload: Retry Upload
+  PendingUpload --> Persisted: Retry Failed
+  PendingUpload --> PersistedAndUploaded: Upload Successful
+  
+  PersistedAndUploaded --> [*]
+```
